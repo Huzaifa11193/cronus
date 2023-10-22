@@ -1,0 +1,28 @@
+.nine-dots-dropdown {
+    position: relative;
+  }
+  
+  .nine-dots-icon:hover  {
+    width: 30px;
+    height: 30px;
+    background-color: #181b20;
+    opacity: 10%;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    z-index: 1;
+  }
+  
