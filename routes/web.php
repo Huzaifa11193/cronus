@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -49,5 +50,10 @@ Route::middleware('auth')->group(function () {
 
 });
 
+
+Route::get('auth/google', [GoogleController::class, 'signInwithGoogle']);
+Route::get('callback/google', [GoogleController::class, 'callbackToGoogle']);
+Route::post('GoogleSetPasswordAndPhone', [GoogleController::class, 'update'])->name('GoogleSetPasswordAndPhone');
+Route::get('GoogleSetPasswordAndPhone', [GoogleController::class, 'edit'])->name('GoogleSetPasswordAndPhone');
 
 require __DIR__.'/auth.php';

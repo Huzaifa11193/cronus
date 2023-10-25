@@ -110,14 +110,13 @@ export default function Login({ status, canResetPassword }) {
                     OR
                     <span className="block after:w-1/3 after:bg-gray-300 after:content-[''] after:absolute after:right-0 after:top-1/2 after:h-0.5 after:transform after:-translate-y-1/2 after:ml-2"></span>
                 </p>
-
-                <div className="mt-4 flex justify-center">
-                    <GoogleButton
-                        type="light"
-                        label='Continue with Google'
-                        onClick={() => { console.log('Google button clicked') }}
-                        />
-                    </div>
+                <div className='flex item-center justify-center mt-4'>
+                <a href='auth/google'>
+                <GoogleButton
+                    onClick={() => { console.log('Google button clicked') }}/>
+                </a>
+               
+                </div>
             </form>
         </GuestLayout>
     );
