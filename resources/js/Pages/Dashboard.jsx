@@ -98,6 +98,7 @@ export default function Dashboard({ auth }) {
       ))}
     </div>
 
+<h1>Kanban Trello</h1>
 
 
                 <Kanban/>
