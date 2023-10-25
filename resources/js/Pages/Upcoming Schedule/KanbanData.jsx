@@ -48,6 +48,24 @@ export const CandidatesData = [
     priority: 'Medium',
     due_Date: "05-Jan-2021",
   },
+  {
+    id: "6",
+    task: "proin",
+    assigned_To: 'Bondon',
+    assignee: 'Antoinette',
+    Status: 'In Progress',
+    priority: 'Medium',
+    due_Date: "05-Jan-2021",
+  },
+  {
+    id: "7",
+    task: "proin",
+    assigned_To: 'Bondon',
+    assignee: 'Antoinette',
+    Status: 'In Progress',
+    priority: 'Medium',
+    due_Date: "05-Jan-2021",
+  },
 ];
 
 

@@ -11,7 +11,12 @@ import TaskCard from "./TaskCard";
 const Container = styled("div")(() => ({
   display: "flex",
   flexDirection: "row",
+  width: "100%",
   overflow: "auto",
+  padding: "2%",
+  overflowY: "auto", // Apply the overflow-y property to enable vertical scrolling
+
+  
 }));
 
 const TaskList = styled("div")(() => ({
@@ -31,6 +36,8 @@ const TaskColumnStyles = styled("div")(() => ({
   width: "100%",
   minHeight: "80vh",
 }));
+
+
 const Title = styled("span")(() => ({
   fontWeight: "bold",
   color: "#333333",
