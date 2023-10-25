@@ -3,10 +3,10 @@
 namespace App\Policies;
 
 use App\Models\User;
-use App\Models\event;
+use App\Models\eventtype;
 use Illuminate\Auth\Access\Response;
 
-class EventPolicy
+class EventtypePolicy
 {
     /**
      * Determine whether the user can view any models.
@@ -19,7 +19,7 @@ class EventPolicy
     /**
      * Determine whether the user can view the model.
      */
-    public function view(User $user, event $event): bool
+    public function view(User $user, eventtype $eventtype): bool
     {
         //
     }
@@ -35,7 +35,7 @@ class EventPolicy
     /**
      * Determine whether the user can update the model.
      */
-    public function update(User $user, event $event): bool
+    public function update(User $user, eventtype $eventtype): bool
     {
         //
     }
@@ -43,7 +43,7 @@ class EventPolicy
     /**
      * Determine whether the user can delete the model.
      */
-    public function delete(User $user, event $event): bool
+    public function delete(User $user, eventtype $eventtype): bool
     {
         //
     }
@@ -51,7 +51,7 @@ class EventPolicy
     /**
      * Determine whether the user can restore the model.
      */
-    public function restore(User $user, event $event): bool
+    public function restore(User $user, eventtype $eventtype): bool
     {
         //
     }
@@ -59,7 +59,7 @@ class EventPolicy
     /**
      * Determine whether the user can permanently delete the model.
      */
-    public function forceDelete(User $user, event $event): bool
+    public function forceDelete(User $user, eventtype $eventtype): bool
     {
         //
     }

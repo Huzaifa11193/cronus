@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\event;
-use App\Http\Requests\StoreeventRequest;
-use App\Http\Requests\UpdateeventRequest;
+use App\Models\smshistory;
+use App\Http\Requests\StoresmshistoryRequest;
+use App\Http\Requests\UpdatesmshistoryRequest;
 
-class EventController extends Controller
+class SmshistoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class EventController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreeventRequest $request)
+    public function store(StoresmshistoryRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class EventController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(event $event)
+    public function show(smshistory $smshistory)
     {
         //
     }
@@ -43,7 +43,7 @@ class EventController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(event $event)
+    public function edit(smshistory $smshistory)
     {
         //
     }
@@ -51,7 +51,7 @@ class EventController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateeventRequest $request, event $event)
+    public function update(UpdatesmshistoryRequest $request, smshistory $smshistory)
     {
         //
     }
@@ -59,7 +59,7 @@ class EventController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(event $event)
+    public function destroy(smshistory $smshistory)
     {
         //
     }

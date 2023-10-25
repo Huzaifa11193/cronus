@@ -99,8 +99,6 @@ export default function Dashboard({ auth }) {
     </div>
 
 
-
-
                 <Kanban/>
             </div>
 

@@ -11,14 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('events', function (Blueprint $table) {
+        Schema::create('smshistories', function (Blueprint $table) {
             $table->id();
-            $table-> string('name');
-            $table-> longText('description');
-            $table-> string('location');
-            $table-> dateTime('datetime');
-            $table-> foreignId('user_id')->references('id')->on('users');
-            $table-> enum('status', ['open', 'closed'])->default('open');
             $table->timestamps();
         });
     }
@@ -28,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('events');
+        Schema::dropIfExists('smshistories');
     }
 };

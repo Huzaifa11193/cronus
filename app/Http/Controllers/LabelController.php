@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\event;
-use App\Http\Requests\StoreeventRequest;
-use App\Http\Requests\UpdateeventRequest;
+use App\Models\label;
+use App\Http\Requests\StorelabelRequest;
+use App\Http\Requests\UpdatelabelRequest;
 
-class EventController extends Controller
+class LabelController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class EventController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreeventRequest $request)
+    public function store(StorelabelRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class EventController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(event $event)
+    public function show(label $label)
     {
         //
     }
@@ -43,7 +43,7 @@ class EventController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(event $event)
+    public function edit(label $label)
     {
         //
     }
@@ -51,7 +51,7 @@ class EventController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateeventRequest $request, event $event)
+    public function update(UpdatelabelRequest $request, label $label)
     {
         //
     }
@@ -59,7 +59,7 @@ class EventController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(event $event)
+    public function destroy(label $label)
     {
         //
     }
